@@ -1,78 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <style type="text/css">
-        .exemplo-cor{
-            background: #c8c8c8;
-            border: solid 1px #ddd;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-    </style>
+        <style type="text/css">
+            .exemplo-cor{
+                background: #c8c8c8;
+                border: solid 1px #ddd;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .dark{
+                background: #000;
+                color: #fff;
+            }
+            .destaque{
+                background: rgb(26, 25, 25);
+                color: #fff;
+            }
+        </style>
 
-    <title>Bootstrap 5</title>
-</head>
-<body>
-    section>
-        <div style="border: solid 1px; height: 1600px; " class="container">
-            <div class="row">
-                <div class="col exemplo-cor text-center">
-                    Coluna1
+        <title>Bootstrap 5</title>
+    </head>
+    <body>
+        <section>
+            <div style="border: solid 1px; height: 1600px; " class="container">
+                <div class="row">
+                    <div class="col exemplo-cor text-center">
+                        Coluna1
+                    </div>
+                    <div class="col exemplo-cor text-center">
+                        Coluna2
+                    </div>
+                    <div class="col exemplo-cor text-center">
+                        Coluna3
+                    </div>
+                    <div class="col exemplo-cor text-center">
+                        Coluna4
+                    </div>
+                    <div class="col exemplo-cor text-center">
+                        Coluna5
+                    </div>   
+                    <div class="col exemplo-cor text-center">
+                        Coluna6
+                    </div>   
+                    <div class="col exemplo-cor text-center">
+                        Coluna7
+                    </div>   
+                    <div class="col exemplo-cor text-center">
+                        Coluna8
+                    </div>   
+                    <div class="col exemplo-cor text-center">
+                        Coluna9
+                    </div>   
+                    <div class="col exemplo-cor text-center">
+                        Coluna10
+                    </div>   
+                    <div class="col exemplo-cor text-center">
+                        Coluna11
+                    </div>   
+                    <div class="col exemplo-cor text-center">
+                        Coluna12
+                    </div>               
                 </div>
-                <div class="col exemplo-cor text-center">
-                    Coluna2
+                <div class="row">
+                    <div class="col-3 exemplo-cor text-center">
+                        Coluna 1
+                    </div>
+                    <div class="col-3 exemplo-cor text-center">
+                        Coluna 2
+                    </div>
+                    <div class="col-3 exemplo-cor text-center">
+                        Coluna 3
+                    </div>
+                    <div class="col-3 exemplo-cor text-center">
+                        Coluna 4
+                    </div>
                 </div>
-                <div class="col exemplo-cor text-center">
-                    Coluna3
+                <div class="row">
+                    <div class="col-12 col-sm-4 dark text-center">
+                        Coluna 1
+                    </div>
+                    <div class="col-6 col-sm-4 dark text-center">
+                        Coluna 2
+                    </div>
+                    <div class="col-6 col-sm-4 dark text-center">
+                        Coluna 3
+                    </div>
                 </div>
-                <div class="col exemplo-cor text-center">
-                    Coluna4
+            <!--Alinhamento de linha vertical-->
+                <div class="row align-items-center" style="min-height: 250px; border: solid red;">
+                    <div class="col-4 dark text-center">
+                        Alinhamento de linha
+                    </div>
+                    <div class="col-4 destaque text-center">
+                        Alinhamento de linha <br>
+                        Alinhamento de linha <br>
+                        Alinhamento de linha
+                    </div>
+                    <div class="col-4 dark text-center">
+                        Alinhamento de linha
+                    </div>
+                </div> 
+            <!--Alinhamento de linha vertical-->
+            <!--Alinhamento individual de coluna-->
+                <div class="row" style="min-height: 250px; border: solid blue ;">
+                    <div class="col-4 align-self-start exemplo-cor text-center">
+                        Alinhamento Individual
+                    </div>
+                    <div class="col-4 align-self-center exemplo-cor text-center">
+                        Alinhamento Individual
+                    </div>
+                    <div class="col-4 align-self-end exemplo-cor text-center">
+                        Alinhamento Individual
+                    </div>
                 </div>
-                <div class="col exemplo-cor text-center">
-                    Coluna5
-                </div>   
-                <div class="col exemplo-cor text-center">
-                    Coluna6
-                </div>   
-                <div class="col exemplo-cor text-center">
-                    Coluna7
-                </div>   
-                <div class="col exemplo-cor text-center">
-                    Coluna8
-                </div>   
-                <div class="col exemplo-cor text-center">
-                    Coluna9
-                </div>   
-                <div class="col exemplo-cor text-center">
-                    Coluna10
-                </div>   
-                <div class="col exemplo-cor text-center">
-                    Coluna11
-                </div>   
-                <div class="col exemplo-cor text-center">
-                    Coluna12
-                </div>               
-            </div>
-            <div class="row">
-                <div class="col-3 exemplo-cor text-center">
-                    Coluna 1
+            <!--Alinhamento individual de coluna-->
+            <!--Alinhamento Horizontal de linha-->
+                <div class="row justify-content-evenly" style="min-height: 250px; border: solid green;">
+                    <div class="col-2 dark text-center">
+                        Alinhamento Horizontal
+                    </div>
+                    <div class="col-2 dark text-center">
+                        Alinhamento Horizontal
+                    </div>
+                    <div class="col-2 dark text-center">
+                        Alinhamento Horizontal
+                    </div>
                 </div>
-                <div class="col-3 exemplo-cor text-center">
-                    Coluna 2
-                </div>
-                <div class="col-3 exemplo-cor text-center">
-                    Coluna 3
-                </div>
-                <div class="col-3 exemplo-cor text-center">
-                    Coluna 4
-                </div>
-            </div>
-    
-</body>
-</html>
+
+            <!--Alinhamento Horizontal de linha-->
+
+            </div>        
+                    
+        </section>
+    </body>
+    </html>
